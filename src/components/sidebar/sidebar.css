@@ -1,0 +1,15 @@
+
+.main{
+    background-color: rgb(15 14 14 / 49%);
+    border-radius: 10px;
+    color: #7d7b7b;
+    padding-top: 10px;
+    width: 57px;
+    margin-top: 15px;
+    height: 100px;
+}
+.icon{
+    padding: 7px;
+    margin-left: 12px;
+}
+

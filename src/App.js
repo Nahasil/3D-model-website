@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import { Container,Row,Col} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+import Main from "./components/main/Main";
+import Card from "./components/Card/Card"
+import './app.css'
+
+
+function App () {
+  const [avatar, setAvatar]=useState('')
+  console.log(avatar)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid={true} className='p-0'>
+      <Row noGutters> 
+         <Col sm={12} md={6} lg={7}>
+          <Main avatar={ avatar} />
+         </Col>
+         <Col  sm={12} md={6} lg={5}>
+          <Card setAvatar={ setAvatar} />
+         </Col>
+      </Row>
+    </Container>
+    
   );
 }
 
