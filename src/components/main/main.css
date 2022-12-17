@@ -3,16 +3,18 @@
 }
 .avatar{
     position: relative;
+    background-color: #000;
 }
 .canvas {
 
-    background-color: rgb(15 14 14 / 49%);
+    background-color: rgba(17, 16, 16, 0.795);
     margin-top: 25px;
     margin-left: 10px;
     border-radius: 7px;
-    max-width: 16rem;
-    max-height: 27rem;   
+    max-width: 39rem;
+    max-height: 38rem;   
 }
+
 
 /*.avatar-image{
     background-color: rgb(15 14 14 / 49%);
